@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+/* sidebar start */
+
+.logo-img{
+    padding: 1px;
+}
+
+.logo-img img{
+    width: 65%;
+    display: block;
+    margin: 25px auto;
+}
+
+.side-bar{
+    background-color: rgb(31,31,31);
+    height: 90vh;
+    width: 280px;
+    position: fixed;
+    top: 45px;
+    left: 11px;
+    z-index: 1;
+}
+
+.side-bar .menu ul li{
+    list-style: none;
+}
+
+.side-bar .menu ul li a{
+    color: rgb(204, 204, 204);
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+.side-bar .menu ul li a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(204, 204, 204);
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.side-bar .menu ul li a:hover:before{
+    width: 100%;
+    
+}
+
+@media only screen and (max-width:768px){
+    .side-bar{
+        display: none;
+    }
+}
+
+/* sidebar end */
+
+/* navbar start */
+
+.m-navbar{
+    display: none;
+    margin-top: 40px !important;
+}
+
+@media only screen and (max-width:768px){
+    .m-navbar{
+        display: block
+    }
+}
+
+/* navbar end */
+
+/* header contact start */
+.contact-no a{
+    color: black;
+    text-decoration: none;
+
+}
+
+.contact-no{
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+/* header contact end */
+
+
+
+/* image section start */
+
+.img-box{
+    height: 300px;
+    overflow: hidden;
+    padding: 0px !important;
+}
+
+@media only screen and (max-width:768px){
+    .img-box{
+        height: auto;
+    }
+}
+
+
+/* image section end */
+
+
+/* Other Information section start */
+
+.FQA p{
+    font-size: 14px;
+    line-height: 25px;
+
+}
+
+
+/* Other Information section end */
+
